@@ -47,9 +47,9 @@ h1 {
 }
 
 .logo {
-  width: 20%;
-	max-width: 88px;
-
+    width: 100%;
+    max-height: 100px;
+    max-width: 100px;
 }
 
 .menu ul li {
@@ -102,7 +102,7 @@ footer h4 {
   right:0;
 	left: 87%; */
   line-height:45px;
-  padding:5px 15px 0px 15px;
+  padding:5px 8% 0px 15px;
   color:#999;
   border:0;
   font-size:1.4em;
@@ -145,10 +145,10 @@ footer h4 {
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		min-height: 100vh;
 }
 
 /**************************END HOMEPAGE STYLES ****************************/
-
 /**************************START ABOUT PAGE STYLES ****************************/
 
 section {
@@ -156,13 +156,14 @@ section {
 	justify-content: center;
 	}
 
-.about-content {
-		flex-direction: column;
+
+.about-content{
 		width: 85%;
 		padding: 8%;
 		margin: 0 auto;
 		text-align: center;
 	}
+
 
 
 .about-figure img{
@@ -188,28 +189,44 @@ section {
 }
 /**************************END ABOUT PAGE STYLES ****************************/
 
-/**************************FINE-ART PAGE STYLES *********************************************************************/
 
+/**************************FINE-ART PAGE STYLES ****************************/
+
+.fine-art{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.fine-art-main {
+	flex: 1
+}
 
 .fine-art-main h2 {
 	padding: 4% 0 0 4%;
 	font-size: 2rem;
+	flex: 1;
 	 }
 
 .fine-art-main p {
 	padding: 9% 4% 7% 5%;
  }
 
+.gallery {
+	display: block;
+}
+
  .gallery figure {
-	width: 70%;
-	max-width: 1200px;
-  margin: auto;
-  padding: 2% 0 1% 0;
+	  width: 50%;
+	  max-width: 1200px;
+	  padding: 3% 20% 1% 20%;
+
  }
 
 .gallery img {
 	max-width: 1200px;
 	width:100%;
+	flex-direction: column;
 }
 
 .gallery figcaption {
@@ -231,7 +248,6 @@ aside p {
 
 
 /**************************END FINE-ART PAGE STYLES ****************************/
-
 
 /**************************START MIN-WIDTH 775 MEDIA QUERY ****************************/
 
@@ -264,42 +280,37 @@ aside p {
 
 	.desktop-menu ul li a{
 		color: #5c785c;
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	h1 {
 		font-size: 4rem;
+		padding-top: 4%
 
 	}
 
 
 
-/*Fine Art media query 775 section */
-.container {
+/*Fine Art section */
+.gallery-container {
 	background: #efe9e9;
 
 }
 .fine-art-main {
-    float: left;
-    width: 55%;
-		font-size: 1.2rem;
+font-size: 1.2rem;
 		background: #fbf1f1;
 
 	}
 
 	.gallery figure {
-		width: 80%;
+		width: 48%;
 		max-width: 1200px;
-		padding: 2% 0 1% 20%;
+		padding: 2% 4% 1% 26%;
 	}
 
 aside {
-	float: right;
-	width: 40%;
-	clear: none;
-	padding: 19% 2% 0 3%;
+
 	background: #efe9e9;
-	line-height: 475%;
 
 }
 
@@ -314,23 +325,147 @@ aside p {
 }
 /**************************END MIN-WIDTH 775 MEDIA QUERY ****************************/
 
+/**************************START MIN WIDTH 850 MEDIA QUERY ****************************/
+
 @media (min-width: 850px) {
 	.homepage-img {
 			    background-position: 50% 28%;
 	}
 }
+/*fine art*/
+aside p {
+	padding: 2% 0 3% 0;
+}
+
+.about-content {
+    flex-direction: row;
+    width: 85%;
+	}
+
+	.about-figure img {
+	    width: 50%;
+	    max-width: 594px;
+	    padding-bottom: 0%;
+	}
+
+
+	.headshot {
+	    width: 70%;
+	    max-width: 322px;
+		}
+
+	.headshot img {
+		    width: 70%;
+		    max-width: 322px;
+		    padding-top: 7%;
+	}
+
+	.headshot p {
+		text-align: left;
+padding: 18% 8% 5% 16%;
+line-height: 1rem;
+font-size: 1.1rem;
+}
+
+/*fine art*/
+
+/**************************END MIN WIDTH 850 MEDIA QUERY ****************************/
 
 /**************************START MIN-WIDTH 1350 MEDIA QUERY ****************************/
 
 @media (min-width: 1350px) {
 
-.container {
+/*START ABOUT 1350  section */
+
+
+
+.about-figure img {
+    width: 62%;
+    max-width: 594px;
+    padding-bottom: 2%;
+	}
+
+
+.headshot {
+	width: 70%;
+	max-width: 322px;
+	padding-left: 20%;
+}
+
+.headshot img {
+	width: 85%;
+  max-width: 322px;
+  padding-top: 35%;
+	}
+
+.headshot p {
+	 padding: 26% 8% 5% 16%;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+/*END ABOUT section */
+
+
+/*START 1350 Fine Art section */
+.fine-art {
+	margin: 0 auto;
+}
+
+.gallery-container {
 		max-width: 1350px;
 		margin: auto;
-
+		display: flex;
 
 	}
 
+.fine-art-main {
+	max-width: 1350px;
+	margin: 0 auto;
+	min-height: 67vh;
+	padding-top: 6%;
 }
+
+.fine-art-main h2 {
+    font-size: 3rem;
+	}
+
+.gallery-container {
+	background: #fbf1f1;
+}
+.gallery {
+	display: flex;
+	flex-direction: row;
+	width: 98%;
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+.gallery-figure {
+	padding: 0;
+}
+
+.gallery figure, .gallery figcaption {
+	padding: 0 2%;
+	}
+
+
+.gallery figure a {
+
+}
+
+.gallery figure a img {
+    width: 99%;
+    justify-content: space-between;
+	}
+
+aside {
+	width: 20%;
+	padding: 19% 0% 13% 3%;
+	line-height: 2rem;
+	font-size: 1.3rem
+}
+}
+/*Fine Art section */
 
 /**************************END MIN-WIDTH 1350 MEDIA QUERY ****************************/
