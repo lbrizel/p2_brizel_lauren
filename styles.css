@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+  background: #f4f4f4;
+	font-family: 'Inconsolata', monospace;
+	color: #514d5b
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+header {
+  background: #dbdbdb;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 2%;
+}
+
+
+.flex {
+	display: flex;
+
+}
+
+h1 {
+  font-family: 'Mr De Haviland', cursive;
+  text-align: center;
+  font-size: 2.7rem;
+	padding-left: 4%;
+	color: #5e2d2d;
+
+}
+
+.logo {
+  width: 20%;
+	max-width: 88px;
+
+}
+
+.menu ul li {
+font-size: 1.5rem;
+}
+
+.desktop-menu {
+	display:none;
+}
+
+
+footer {
+	  background: #dbdbdb;
+		display: flex;
+		justify-content:space-around;
+		margin: auto;
+		width: 94%;
+    padding: 3%;
+
+}
+
+footer ul li a {
+	color: #5c785c;
+	max-width: 100%;
+
+}
+
+
+footer ul li {
+	list-style-type: none;
+}
+
+footer h3 {
+	font-size: 1.2em;
+  padding: 10px 0;
+}
+
+footer h4 {
+	padding: 25px 2% 15px 5%;
+	font-size: .7rem;
+}
+
+
+
+/**************************Hamburger Menu Styles ****************************/
+.hamburger{
+  background:none;
+  /* position:absolute;
+  top:14px;
+  right:0;
+	left: 87%; */
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  /* position:absolute;
+  top:11px;
+  right:0;
+	left: 88%; */
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+/**************************END Hamburger Menu Styles ****************************/
+
+
+/**************************HOMEPAGE STYLES ****************************/
+
+.homepage-img {
+		background-image: url("images/succulents-crop.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+}
+
+/**************************END HOMEPAGE STYLES ****************************/
+
+/**************************FINE-ART PAGE STYLES ****************************/
+
+
+.fine-art-main h2 {
+	padding: 4% 0 0 4%;
+	font-size: 2rem;
+	 }
+
+.fine-art-main p {
+	padding: 9% 4% 7% 5%;
+ }
+
+ .gallery figure {
+	width: 70%;
+	max-width: 1200px;
+  margin: auto;
+  padding: 2% 0 1% 0;
+ }
+
+.gallery img {
+	max-width: 1200px;
+	width:100%;
+}
+
+.gallery figcaption {
+	font-size: .7rem;
+	padding-bottom: 11%;
+}
+
+aside {
+ 	padding: 9% 0 7% 4%;
+
+}
+
+aside p {
+	margin-right: 4%;
+}
+
+
+
+
+
+/**************************END FINE-ART PAGE STYLES ****************************/
+
+/**************************START MIN-WIDTH 775 MEDIA QUERY ****************************/
+
+@media (min-width: 775px) {
+	.flex {
+		display: flex;
+		width: 58%;
+	}
+
+.menu, .hamburger, .cross {
+	display: none;
+}
+
+.desktop-menu {
+	display: block;
+	float: right;
+	width: 43%;
+	text-align: right;
+	margin-bottom: 32px;
+	}
+
+	.desktop-menu ul {
+		padding-top: 10px;
+	}
+	.desktop-menu ul li {
+		display: inline-block;
+    padding: 4% 3%;
+    margin-top: 5%;
+	}
+
+	.desktop-menu ul li a{
+		color: #5c785c;
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 4rem;
+
+	}
+
+
+
+/*Fine Art section */
+.container {
+	background: #efe9e9;
+
+}
+.fine-art-main {
+    float: left;
+    width: 55%;
+		font-size: 1.2rem;
+		background: #fbf1f1;
+
+	}
+
+	.gallery figure {
+		width: 80%;
+		max-width: 1200px;
+		padding: 2% 0 1% 20%;
+	}
+
+aside {
+	float: right;
+	width: 40%;
+	clear: none;
+	padding: 19% 2% 0 3%;
+	background: #efe9e9;
+	line-height: 475%;
+
+}
+
+aside p {
+	margin-right: 4%;
+	padding: 18% 0 3% 0;
+}
+
+.fine-art-footer {
+	clear: both;
+}
+}
+/**************************END MIN-WIDTH 775 MEDIA QUERY ****************************/
+
+@media (min-width: 850px) {
+	.homepage-img {
+			    background-position: 50% 28%;
+	}
+}
+
+/**************************START MIN-WIDTH 1350 MEDIA QUERY ****************************/
+
+@media (min-width: 1350px) {
+
+.container {
+		max-width: 1350px;
+		margin: auto;
+
+
+	}
+
+}
+
+/**************************END MIN-WIDTH 1350 MEDIA QUERY ****************************/
