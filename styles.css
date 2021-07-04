@@ -149,7 +149,46 @@ footer h4 {
 
 /**************************END HOMEPAGE STYLES ****************************/
 
-/**************************FINE-ART PAGE STYLES ****************************/
+/**************************START ABOUT PAGE STYLES ****************************/
+
+section {
+	display: flex;
+	justify-content: center;
+	}
+
+.about-content {
+		flex-direction: column;
+		width: 85%;
+		padding: 8%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+
+.about-figure img{
+	width: 100%;
+	max-width: 322px;
+	padding-bottom: 2%
+}
+
+.about-figure figcaption {
+	font-size: 0.8rem;
+	padding-bottom: 10%;
+}
+
+.headshot img{
+	width: 91%;
+	max-width: 322px;
+}
+
+.headshot p {
+    text-align: left;
+    padding: 11% 8% 5% 9%;
+    font-size: 1.2rem;
+}
+/**************************END ABOUT PAGE STYLES ****************************/
+
+/**************************FINE-ART PAGE STYLES *********************************************************************/
 
 
 .fine-art-main h2 {
@@ -193,6 +232,7 @@ aside p {
 
 /**************************END FINE-ART PAGE STYLES ****************************/
 
+
 /**************************START MIN-WIDTH 775 MEDIA QUERY ****************************/
 
 @media (min-width: 775px) {
@@ -234,7 +274,7 @@ aside p {
 
 
 
-/*Fine Art section */
+/*Fine Art media query 775 section */
 .container {
 	background: #efe9e9;
 
