@@ -32,6 +32,7 @@ header {
 }
 
 
+
 .flex {
 	display: flex;
 
@@ -272,8 +273,17 @@ aside p {
 	margin-right: 4%;
 }
 
-
-
+.fine-art .back-to-top {
+	padding-bottom: 3%;
+	text-align: center;
+}
+ .back-to-top a{
+	text-decoration: none;
+	font-family: 'Inconsolata', monospace;
+	color: #5c785c;
+	font-size: .9rem;
+	background:#f4f4f4;
+}
 
 
 /**************************END FINE-ART PAGE STYLES ****************************/
@@ -353,15 +363,24 @@ font-size: 1.2rem;
 	}
 
 aside {
-
+	padding: 0% 0 7% 4%;
 	background: #efe9e9;
 
 }
 
 aside p {
 	margin-right: 4%;
-	padding: 18% 0 3% 0;
+	padding-top:7%;
 }
+
+.back-to-top {
+ background:#efe9e9;
+}
+
+.back-to-top a {
+ background:#efe9e9;
+}
+
 
 .fine-art-footer {
 	clear: both;
@@ -442,6 +461,11 @@ about-container figure.crane a img {
 }
 
 /*fine art*/
+
+aside {
+ 	padding: 6% 0 7% 4%;
+}
+
 aside p {
 	padding: 2% 0 3% 0;
 }
@@ -523,6 +547,10 @@ aside {
 	padding: 19% 0% 13% 3%;
 	line-height: 2rem;
 	font-size: 1.3rem
+}
+
+.back-to-top {
+    display: none;
 }
 }
 /*Fine Art section */
