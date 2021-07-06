@@ -548,11 +548,16 @@ aside {
 	line-height: 2rem;
 	font-size: 1.3rem
 }
+.back-to-top  {
+    display: none;
+}
 
-.back-to-top {
+
+.back-to-top a {
     display: none;
 }
 }
+
 /*Fine Art section */
 
 /**************************END MIN-WIDTH 1350 MEDIA QUERY ****************************/
